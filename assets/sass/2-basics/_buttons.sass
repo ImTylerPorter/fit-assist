@@ -6,24 +6,32 @@ input[type="button"]
   display: inline-block
   height: 38px
   padding: 0 30px
-  color: #555
+  color: $off-white
   text-align: center
-  font-size: 11px
   font-weight: 600
+  font-size: 1.3em
   line-height: 38px
   letter-spacing: .1rem
   text-transform: uppercase
   text-decoration: none
   white-space: nowrap
   background-color: transparent
-  border-radius: 4px
-  border: 1px solid #bbb
+  border: 1px solid $border
   cursor: pointer
-  box-sizing: border-box
+  font-family: "futura-pt", sans-serif
+
 
   &:hover,
   &:active,
   &:focus
-    color: #333
-    border-color: #888
+    color: $black
+    border-color: $black
     outline: 0
+
+  &.button-highlight
+    background: $highlight
+    border-color: $highlight
+    &:hover
+      color: $off-white
+      opacity: .69
+
