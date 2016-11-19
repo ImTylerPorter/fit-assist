@@ -1,0 +1,71 @@
+body
+  background-color: black
+  overflow-x: hidden
+  background-image: url(../../assets/img/background.jpg)
+  background-size: cover
+  min-height: 100vh
+
+.rock-wrap
+  text-align: center
+  width: 1180px
+  max-width: 90%
+  margin: 0 auto
+  padding-top: 50px
+
+  .logo
+    color: $white
+    text-transform: uppercase
+    display: block
+    margin-bottom: 0
+    font-size: 4.5em
+    text-align: center
+    font-family: "ostrich-sans-bold", sans-serif
+    @media (max-width: 600px)
+      font-size: 2.5em
+  h2
+    margin: 0
+    color: $white
+    font-weight: normal
+    text-transform: uppercase
+    font-size: 2em
+  section
+    max-width: 800px
+    margin: 50px auto
+    position: relative
+    padding: 10px
+    border: 1px solid $white
+    @media (max-width: 600px)
+      margin: 50px 1.5%
+
+  img
+    max-width: 100%
+    display: block
+
+
+
+.social-icon-wrap
+  position: fixed
+  bottom: 0px
+  left: 0
+  right: 0
+  background: black
+  padding: .5% 0
+  a
+    display: inline-block
+    color: white
+    margin-right: 10px
+    font-size: 1.8em
+    &:last-child
+      margin-right: 0
+    &.twitter
+      &:hover
+        color: #55acee // Twitter blue
+    &.facebook
+      &:hover
+        color: #3c5a96 // Facebook blue
+    &.instagram
+      &:hover
+        color: #c93c9f // This could be better
+    &.snapchat
+      &:hover
+        color: #fffa37 // Snapchat yellow
