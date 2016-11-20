@@ -393,9 +393,9 @@ header {
     float: left; }
     header #logo img {
       display: block;
-      width: 260px;
+      width: 180px;
       height: auto;
-      margin-top: 7px; }
+      margin-top: 14px; }
   header nav {
     float: right; }
     header nav a {
