@@ -415,6 +415,13 @@ input[type="button"] {
   input[type="button"].button-big {
     height: 50px;
     line-height: 50px; }
+  .button.button-huge,
+  button.button-huge,
+  input[type="submit"].button-huge,
+  input[type="reset"].button-huge,
+  input[type="button"].button-huge {
+    height: 75px;
+    line-height: 75px; }
 
 input[type="text"], textarea {
   width: 100%;
@@ -514,10 +521,20 @@ header {
       margin-top: 8px; }
   header nav {
     float: right; }
+    header nav::after {
+      clear: both;
+      content: "";
+      display: table; }
     header nav a {
       margin-left: 10px; }
       header nav a:first-of-type {
         margin: 0; }
+      header nav a .profile-image {
+        width: 38px;
+        border-radius: 50%;
+        max-width: 100%;
+        float: left;
+        margin-right: 5px; }
 
 .hero {
   background-image: url(../../assets/img/hero.jpg);
@@ -656,5 +673,78 @@ header {
 
 .inline-block {
   display: inline-block; }
+
+.dashboard {
+  padding-top: 100px; }
+  .dashboard h1 {
+    color: #177e87;
+    text-align: center;
+    font-size: 3em; }
+  .dashboard ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .dashboard ul .message-item::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .dashboard ul .message-item h5 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #979797;
+      margin-bottom: 0; }
+    .dashboard ul .message-item .profile-image {
+      width: 65px;
+      border-radius: 50%;
+      float: left;
+      vertical-align: middle; }
+      @media (max-width: 500px) {
+        .dashboard ul .message-item .profile-image {
+          float: none;
+          margin: 10px auto;
+          display: block; } }
+    .dashboard ul .message-item .message {
+      margin-left: 20px;
+      width: 90%;
+      font-weight: bold;
+      float: right; }
+      @media (max-width: 955px) {
+        .dashboard ul .message-item .message {
+          width: 80%; } }
+      @media (max-width: 500px) {
+        .dashboard ul .message-item .message {
+          width: 100%;
+          float: none;
+          text-align: center;
+          margin: 0; } }
+    .dashboard ul .trainer .profile-image {
+      float: right; }
+      @media (max-width: 500px) {
+        .dashboard ul .trainer .profile-image {
+          float: none; } }
+    .dashboard ul .trainer .message {
+      text-align: right;
+      float: left;
+      margin-right: 20px;
+      margin-left: 0px;
+      font-weight: normal; }
+      @media (max-width: 500px) {
+        .dashboard ul .trainer .message {
+          width: 100%;
+          float: none;
+          text-align: center;
+          margin: 0; } }
+    .dashboard ul .trainer .not-answered {
+      font-family: sans-serif;
+      font-style: italic;
+      margin-top: 20px; }
+  .dashboard .button {
+    display: block;
+    margin: 0 auto;
+    font-size: 2em; }
+    @media (max-width: 560px) {
+      .dashboard .button {
+        font-size: 1.4em;
+        padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */
