@@ -568,8 +568,13 @@ header {
 #signup-page {
   background-color: transparent; }
 
+.signup-bg {
+  background-image: url(../../assets/img/signup-bg.jpg); }
+
+.login-bg {
+  background-image: url(../../assets/img/login-bg.jpg); }
+
 .signup-body {
-  background-image: url(../../assets/img/signup-bg.jpg);
   min-height: 100vh;
   background-size: cover;
   background-position: 50% 50%;
@@ -619,9 +624,9 @@ header {
     .signup-body .signup-card form input[type="submit"] {
       background: #177e87;
       border: 2px solid #177e87;
-      margin: 0 auto;
       display: block;
-      transition: all 300ms; }
+      transition: all 300ms;
+      margin: 0 auto; }
       .signup-body .signup-card form input[type="submit"]:hover {
         background: #3A424C;
         border-color: #3A424C; }
@@ -640,6 +645,14 @@ header {
       .signup-body .signup-card form .facebook-button p {
         display: inline;
         font-weight: bold; }
+    .signup-body .signup-card form .forgot-password {
+      display: block;
+      text-align: center;
+      margin-top: 0.4em;
+      color: #6A7480;
+      cursor: pointer; }
+      .signup-body .signup-card form .forgot-password:hover {
+        color: #111; }
 
 .inline-block {
   display: inline-block; }

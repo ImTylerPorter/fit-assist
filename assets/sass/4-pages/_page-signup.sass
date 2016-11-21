@@ -1,7 +1,10 @@
 #signup-page
 	background-color: transparent
-.signup-body
+.signup-bg
 	background-image: url(../../assets/img/signup-bg.jpg)
+.login-bg
+	background-image: url(../../assets/img/login-bg.jpg)
+.signup-body
 	min-height: 100vh
 	background-size: cover
 	background-position: 50% 50%
@@ -51,9 +54,9 @@
 			input[type="submit"]
 				background: $highlight
 				border: 2px solid $highlight
-				margin: 0 auto
 				display: block
 				transition: all 300ms
+				margin: 0 auto
 				&:hover
 					background: $dark
 					border-color: $dark
@@ -75,6 +78,15 @@
 				p
 					display: inline
 					font-weight: bold
+
+			.forgot-password
+				display: block
+				text-align: center
+				margin-top: .4em
+				color: $text
+				cursor: pointer
+				&:hover
+					color: $black
 
 
 
