@@ -18,13 +18,19 @@
 		vertical-align: middle
 		display: block
 		z-index: 1
-		margin: 100px auto 0
+		margin: 100px auto 50px
 		padding: 1.5em 2.5%
 
-		h2
+		h2, h3
 			color: $off-white
-			font-size: 1.8em
 			text-align: center
+		h2
+			font-family: 1.8em
+
+		h3
+			font-size: 1.6em
+			text-transform: uppercase
+
 
 		form
 			.half-input
@@ -33,6 +39,15 @@
 				margin-right: 20px
 				&:nth-child(4) ,&:nth-child(3n+4)
 					margin-right: 0
+				@media (max-width: 800px)
+					width: 100%
+					display: block
+			.third-input
+				width: 30.9%
+				display: inline-block
+				margin-right: 20px
+				&:last-of-type
+					margin: 0
 				@media (max-width: 800px)
 					width: 100%
 					display: block
@@ -60,6 +75,9 @@
 				&:hover
 					background: $dark
 					border-color: $dark
+			textarea
+				background: transparent
+				min-height: 250px
 
 			.facebook-button
 				display: block

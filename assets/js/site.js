@@ -19,3 +19,10 @@ function smoothlyScroll (duration) {
       }
   });
 }
+
+// Temporary redirect for page - Remove JS/CSS for production
+$('.dashboard-redirect').on('click', function(event) {
+    event.preventDefault(); 
+    var url = $(this).data('target');
+    location.replace(url);
+});
